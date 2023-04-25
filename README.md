@@ -1,30 +1,31 @@
-# Predict Cancer Mortality Rates in US Counties
+# Predict Cancer Mortality Rates in US Counties And Classification of 1-year patient mortality following a heart attack
 
 ## Project Overview
 
-This project involves building a multiple models to predict cancer mortality rates in "unseen" US counties. The dataset provided comprises various features/predictors related to socio-economic characteristics and other types of information for specific counties in the country. The goal of the project is to create a model that can accurately predict cancer mortality rates in counties.
+**First part**: Tasks involve building multiple models(OLS, Lasso, Ridge) to predict cancer mortality rates in US counties. The dataset provided comprises various features/predictors related to socio-economic characteristics and other types of information for specific counties in the country. The goal of the project is to create a model that can accurately predict cancer mortality rates in counties.
+
+**Second part**: Tasks involve building two models(Logistic regression classifiers and Random Forest classifier) to classify 1-year patient mortality following a heart attack.
+
 The project is divided into the following exercises:
 
 1. Data exploration, visualization, and correlation analysis
 2. Pre-processing the data using scikit-learn pipeline
-3. Fitting linear regression models (OLS, Lasso, Ridge) and comparing their performance
-4. Identifying the most important features using Lasso regression
-5. Fitting a Random Forest regression model and comparing its performance with the best linear regression model
-6. Writing an inference script for the best regression model and testing it on the provided example test data
+3. Fitting models and comparing their performance
+4. Identifying the most important features.
 
 ## Technology and Methology
 
 This project utilized Python programming language and its popular data analysis and machine learning libraries, including **scikit-learn**, **pandas**, **numpy**, and **matplotlib**. I employed a systematic approach that encompassed **data exploration**, **visualization**, **pre-processing**, **and model development**.
 
-The methodology involved multiple steps, starting with data exploration and visualization to **identify patterns** and **outliers**. I then used a **scikit-learn pipeline** for pre-processing the data, followed by fitting **linear regression** models, including **Ordinary Least Squares (OLS), Lasso, and Ridge**. I evaluated and compared their performances to identify the best performing model. The Lasso regression was used to pinpoint the most relevant features for our prediction task. Furthermore, I fit a **Random Forest regression** model and compared its performance with the best linear regression model.
+The methodology involved multiple steps, starting with **data exploration and visualization** to **identify patterns** and **outliers**. I then used a **scikit-learn pipeline** for pre-processing the data, followed by fitting **linear regression** models, including **Ordinary Least Squares (OLS), Lasso, and Ridge**, and **Random Forest classifer** and **Logistic Regression Classifier**. 
 
-Finally, I developed an inference script for the best regression model and tested it on the provided example test data. <u>This project demonstrated the effectiveness of utilizing machine learning techniques and Python libraries</u> for predicting cancer mortality rates in US counties.
+<u>This project demonstrated the effectiveness of utilizing machine learning techniques</u>.
 
 ## Data
 
 The dataset provided includes 'Training_data.csv' and 'Training_data_targets.csv' files. 'Training_data.csv' contains various socio-economic and other features for specific US counties, while 'Training_data_targets.csv' contains the corresponding target variables for the training set.
 
-**Data Dictionary**
+**Data Dictionary 1** 
 
 | Feature                 | Description                                                  |
 | ----------------------- | ------------------------------------------------------------ |
@@ -59,7 +60,16 @@ The dataset provided includes 'Training_data.csv' and 'Training_data_targets.csv
 | PctMarriedHouseholds    | Percent of married households                                |
 | BirthRate               | Number of live births relative to number of women in county  |
 
+**Data Dictionary 2**
 
+| Feature               | Description                                                  |
+| --------------------- | ------------------------------------------------------------ |
+| Age-at-heart-attack   | Age in years when heart attack occurred                      |
+| Pericardial-effusion  | Pericardial effusion is fluid around the heart.  0=no fluid, 1=fluid |
+| Fractional-shortening | A measure of contracility around the heart lower numbers are increasingly abnormal |
+| Epss                  | E-point septal separation, another measure of contractility. Larger numbers are increasingly abnormal. |
+| Lvdd                  | Left ventricular end-diastolic dimension.  This is a measure of the size of the heart at end-diastole.Large hearts tend to be sick hearts. |
+| Wall-motion-index     | Equals wall-motion-score divided by number of segments seen. Usually 12-13 segments are seen in an echocardiogram. |
 
 
 ## Requirements
@@ -72,13 +82,13 @@ The dataset provided includes 'Training_data.csv' and 'Training_data_targets.csv
 
 ## Results
 
-The results of the project will include the best performing regression model, important features identified by the Lasso and Random Forest models, and the performance comparison between the models.
+The results of the project will include the best performing regression model, important features, and the performance comparison between the models.
+
+
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](https://chat.openai.com/LICENSE) file for more information.
-
-
 
 
 
