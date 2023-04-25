@@ -115,8 +115,15 @@ from sklearn.model_selection import GridSearchCV
 >
 >- Ridge: add the sum of absolute value of **weights**
 >  ![image-20230425140004307](./images/image-20230425140004307.png)
->  This will make sure no feature can be too much importance than others.
+>   This will make sure no feature can be too much importance than others.
 >- Lasso: add the sum of the squares of **weights**![image-20230425141945109](./images/image-20230425141945109.png)
 >- Lambda:
 >  Increasing: bias increases, the model won't learn the details then lead to underfitting.
->  0: euquals to OLS
+>   0: euquals to OLS
+
+**RF**
+
+> from sklearn.ensemble import RandomForestRegressor
+>
+> Generate trees by chosing features randomly.
+> The number of trees and max number of featues will be set in advance.
