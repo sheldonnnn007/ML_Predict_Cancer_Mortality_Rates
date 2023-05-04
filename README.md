@@ -137,3 +137,18 @@ from sklearn.model_selection import GridSearchCV
 >
 > Generate trees by chosing features randomly.
 > The number of trees and max number of featues will be set in advance.
+
+
+
+- Visual analysis
+- 各fields之间的关系
+- Create an ML pipeline to pre-process the data.
+
+
+
+
+
+
+
+
+
