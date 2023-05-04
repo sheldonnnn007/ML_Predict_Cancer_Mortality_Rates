@@ -123,10 +123,10 @@ from sklearn.model_selection import GridSearchCV
 ><u>Lasso and Ridge are two ways to avoid overfitting</u>: add a new term on cost function 
 >Overfitting always happend with the extramly large value of **weights**, so we use weights below apart from bias.
 >
->- Ridge: add the sum of absolute value of **weights**
+>- Ridge: add the sum of the squares of **weights**
 >  ![image-20230425140004307](./images/image-20230425140004307.png)
 >   This will make sure no feature can be too much importance than others.
->- Lasso: add the sum of the squares of **weights**![image-20230425141945109](./images/image-20230425141945109.png)
+>- Lasso: add the sum of absolute value of **weights**![image-20230425141945109](./images/image-20230425141945109.png)
 >- Lambda:
 >  Increasing: bias increases, the model won't learn the details then lead to underfitting.
 >   0: euquals to OLS
